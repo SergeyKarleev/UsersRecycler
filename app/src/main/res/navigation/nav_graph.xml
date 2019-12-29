@@ -12,12 +12,12 @@
         tools:layout="@layout/users_fragment" >
         <action
             android:id="@+id/action_usersFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            app:destination="@+id/detailsFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="karleev.sergey.userslist.fragments.details.DetailsFragment"
+        android:name="karleev.sergey.userslist.fragments.details.DetailsUserFragment"
         android:label="details_fragment"
         tools:layout="@layout/details_fragment" />
 </navigation>

@@ -4,41 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
     android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
     android:padding="@dimen/margin_S">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/avatarIV"
         android:layout_width="@dimen/users_avatar_size"
         android:layout_height="@dimen/users_avatar_size"
+        android:background="@drawable/bg_round_oval"
+        android:backgroundTint="@color/bg_avatar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/pl_empty_woman_avatar"
-        android:backgroundTint="@color/bg_avatar"
-        android:background="@drawable/bg_round_oval"/>
+        tools:src="@drawable/pl_empty_woman_avatar" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/badgeIV"
+    <TextView
+        android:id="@+id/badgeTV"
         android:layout_width="@dimen/users_badge_size"
         android:layout_height="@dimen/users_badge_size"
-        app:civ_border_color="@android:color/white"
-        app:civ_border_width="2dp"
+        android:background="@drawable/bg_badge_oval"
+        android:textColor="@android:color/white"
+        tools:text="M"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="@dimen/font_size_h10"
+        app:autoSizeMaxTextSize="@dimen/font_size_h9"
+        android:gravity="center"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/avatarIV"
         app:layout_constraintEnd_toEndOf="@+id/avatarIV"
         app:layout_constraintHeight_percent=".2"
-        app:layout_constraintHorizontal_bias=".95"
-        app:layout_constraintStart_toStartOf="@+id/avatarIV"
         app:layout_constraintWidth_percent=".2"
-        android:background="@color/bg_avatar"
         tools:src="@android:color/holo_red_dark" />
 
     <TextView
         android:id="@+id/userDescriptionTV"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_L"
         android:textColor="@color/textColor"
-        android:textSize="@dimen/font_size_h3"
+        android:textSize="@dimen/font_size_h5"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/avatarIV"
         app:layout_constraintStart_toEndOf="@+id/avatarIV"
@@ -48,42 +54,46 @@
 
     <TextView
         android:id="@+id/lastMessageTV"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_L"
-        android:textSize="@dimen/font_size_h4"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/font_size_h6"
         app:layout_constraintBottom_toBottomOf="@+id/avatarIV"
-        app:layout_constraintStart_toEndOf="@+id/avatarIV"
+        app:layout_constraintEnd_toStartOf="@+id/lastMessageDateTV"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/userDescriptionTV"
         app:layout_constraintTop_toTopOf="@+id/avatarIV"
         app:layout_constraintVertical_bias=".9"
-        tools:text="лчлчлч" />
+        tools:text="лчлчлч skdfsdlkjs lsdkjf lskdjf lksdjlfksjd flskdjf sldkjf  sldkfj" />
 
 
     <TextView
         android:id="@+id/deletedFlagTV"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/users_deleted_flag"
         android:textColor="@color/users_deleted_textcolor"
-        app:autoSizeMaxTextSize="@dimen/font_size_h4"
-        app:autoSizeMinTextSize="@dimen/font_size_h9"
-        app:autoSizeTextType="uniform"
         android:visibility="invisible"
-        tools:visibility="visible"
+        app:autoSizeMaxTextSize="@dimen/font_size_h7"
+        app:autoSizeMinTextSize="@dimen/font_size_h9"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="@+id/avatarIV"
         app:layout_constraintEnd_toEndOf="@+id/avatarIV"
         app:layout_constraintStart_toStartOf="@+id/avatarIV"
-        app:layout_constraintTop_toTopOf="@+id/avatarIV" />
+        app:layout_constraintTop_toTopOf="@+id/avatarIV"
+        tools:visibility="visible" />
 
     <TextView
+        android:id="@+id/lastMessageDateTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/font_size_h8"
         app:layout_constraintBottom_toBottomOf="@+id/userDescriptionTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/userDescriptionTV"
-
-
         tools:text="26.01, 19:00" />
 
 
