@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Margins-->
+    <dimen name="margin_XXL">60dp</dimen>
+    <dimen name="margin_XL_plus">50dp</dimen>
+    <dimen name="margin_XL">40dp</dimen>
+    <dimen name="margin_L_plus">30dp</dimen>
+    <dimen name="margin_L">20dp</dimen>
+    <dimen name="margin_M">16dp</dimen>
+    <dimen name="margin_MS">10dp</dimen>
+    <dimen name="margin_S">8dp</dimen>
+    <dimen name="margin_XS_plus">6dp</dimen>
+    <dimen name="margin_XS">4dp</dimen>
+    <dimen name="margin_XXS">2dp</dimen>
+
+    <!--Fonts-->
+    <dimen name="font_size_h0">40sp</dimen>
+    <dimen name="font_size_h1">32sp</dimen>
+    <dimen name="font_size_h2">26sp</dimen>
+    <dimen name="font_size_h3">20sp</dimen>
+    <dimen name="font_size_h4">18sp</dimen>
+    <dimen name="font_size_h5">16sp</dimen>
+    <dimen name="font_size_h6">14sp</dimen>
+    <dimen name="font_size_h7">12sp</dimen>
+    <dimen name="font_size_h8">10sp</dimen>
+    <dimen name="font_size_h9">8sp</dimen>
+    <dimen name="font_size_h10">6sp</dimen>
+
+    <!--Users Fragment-->
+    <dimen name="users_avatar_size">100dp</dimen>
+    <dimen name="users_badge_size">20dp</dimen>
+</resources>
